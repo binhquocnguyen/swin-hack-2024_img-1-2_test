@@ -1,0 +1,126 @@
+.stage-title, .progress-title, .instruction-title, h4, .category-card p {
+    font-family: "SF Pro Display",  "SF Pro", Helvetica, Arial, sans-serif;
+}
+
+.progress-bar-fill {
+    width: 50%;
+    background: linear-gradient(90deg, #F8AB5E 0%, #F36961 200%);
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 64px 0 56px;
+    padding: 0 6px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background-color: #fff;
+    height: 260px;
+    padding: 28px clamp(10px, 3%, 25px);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 0 250px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card.highlighted {
+    border: 4px solid #f8a65e;
+    /* Source: https://colorkit.io/. 
+    Steps: 15, 2nd color from the left */
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 16px 0 12px;
+    color: #1F2937;
+}
+
+.category-card p {
+    font-size: 16px;
+    color: #4B5563;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding-bottom: 16px;
+}
+
+.button {
+    padding: 10px 36px;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: scale(1.05); 
+    filter: brightness(1.05);
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.button:active { 
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.button.back {
+    background-color: #031749;
+}
+
+.button.back a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button.next {
+    background: linear-gradient(180deg, #F8AB5E 0%, #F36961 100%);
+}
+
+.button.next a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) and (min-width:350px) {
+    /* For most phones */
+    .category-container {
+        padding: 0 24px;
+    }
+
+    .category-card {
+        flex: 1 0 230px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* For Samsung Z Fold 5*/
+
+    .category-container {
+        padding: 0 16px;
+    }
+
+    .category-card {
+        flex: 1 0 200px;
+        height: 220px;
+    }
+}
