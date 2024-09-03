@@ -123,11 +123,19 @@ body {
     body {
         padding: 16px 32px;
     }
+
+    .button-container {
+        margin-bottom: 64px;
+    }
 }
 
 @media (max-width: 350px) {
     /* For Samsung Z Fold 5*/
     body {
         padding: 16px 24px;
+    }
+
+    .button-container {
+        margin-bottom: 64px;
     }
 }
