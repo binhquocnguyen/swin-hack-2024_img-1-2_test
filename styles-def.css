@@ -11,7 +11,7 @@ body {
     background-color: #fcfcfc;
     margin: 0;
     padding: 16px 64px;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -76,6 +76,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 36px;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -120,13 +121,13 @@ body {
 @media (max-width: 500px) and (min-width:350px) {
     /* For most phones */
     body {
-        padding: 16px 32px 64px;
+        padding: 16px 32px;
     }
 }
 
 @media (max-width: 350px) {
     /* For Samsung Z Fold 5*/
     body {
-        padding: 16px 24px 64px;
+        padding: 16px 24px;
     }
 }

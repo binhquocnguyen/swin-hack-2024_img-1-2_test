@@ -61,52 +61,6 @@ h4 {
     color: #4B5563;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 36px;
-    padding-bottom: 16px;
-}
-
-.button {
-    padding: 10px 36px;
-    border: none;
-    border-radius: 200px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.button:hover {
-    transform: scale(1.05); 
-    filter: brightness(1.05);
-    text-decoration: underline;
-    text-decoration-color: #fff;
-}
-
-.button:active { 
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-}
-
-.button.back {
-    background-color: #031749;
-}
-
-.button.back a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.button.next {
-    background: linear-gradient(180deg, #F8AB5E 0%, #F36961 100%);
-}
-
-.button.next a {
-    color: #fff;
-    text-decoration: none;
-}
-
 @media (max-width: 500px) and (min-width:350px) {
     /* For most phones */
     .category-container {
