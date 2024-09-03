@@ -76,7 +76,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 36px;
-    padding-bottom: 16px;
 }
 
 .button {
