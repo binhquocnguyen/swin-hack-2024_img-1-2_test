@@ -3,8 +3,15 @@
 }
 
 .progress-bar-fill {
-    width: 50%;
-    background: linear-gradient(90deg, #F8AB5E 0%, #F36961 200%);
+    width: 0%;
+    background: linear-gradient(90deg, #F8AB5E 0%, #F36961 180%);
+    animation: fillBar 0.8s forwards; /* Add animation */
+}
+
+@keyframes fillBar {
+    to {
+        width: 50%; /* End at 50% */
+    }
 }
 
 .category-container {

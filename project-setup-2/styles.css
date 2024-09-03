@@ -7,7 +7,15 @@ label, input, textarea {
 }
 
 .progress-bar-fill {
-    background: linear-gradient(90deg, #F8AB5E 0%, #F36961 100%);
+    width: 50%;
+    background: linear-gradient(90deg, #F8AB5E 0%, #F36961 120%);
+    animation: fillBar 0.8s forwards; /* Add animation */
+}
+
+@keyframes fillBar {
+    to {
+        width: 100%; /* End at 50% */
+    }
 }
 
 .project-form {
