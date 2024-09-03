@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Redirect to another page after 0 seconds -->
-    <meta http-equiv="refresh" content="0; url=project-setup-1/index.html">
+    <!-- <meta http-equiv="refresh" content="0; url=project-setup-1/index.html"> -->
     <title>Redirecting...</title>
+    <style>
+        p, a {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        a {
+            background: linear-gradient(90deg, #F8AB5E 0%, #F36961 96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px; /* Thickness of the underline */
+            background: linear-gradient(90deg, #F8AB5E 0%, #F36961 96%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom right;
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
 </head>
 <body>
     <p>If you are not redirected automatically, <a href="project-setup-1/index.html">click here</a>.</p>
